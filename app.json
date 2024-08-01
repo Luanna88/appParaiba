@@ -11,17 +11,19 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "sdkVersion": "51.0.0",
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan QR codes."
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "permissions": [
+        "CAMERA"
+      ]
     }
   }
 }
+   
